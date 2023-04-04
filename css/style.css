@@ -1,0 +1,87 @@
+h1 {
+    color: #880000;
+}
+
+p {
+    color: #000fff;
+}
+
+i {
+    color:#CF4499;
+}
+/*0,0,0,1*/
+span {
+    color:#c3a315;
+}
+/*0,0,1,0*/
+.text {
+    color: #00ffff;
+}
+/*0,0,0,1 + 0,0,1,0 = 0,0,1,1*/
+p .text {
+    color:#a7ff04;
+}
+/*0,0,0,1 + 0,0,0,1 + 0,0,1,0 = 0,0,1,2*/
+p span.text {
+    color:#ff5504;
+}
+        /*0,0,0,1 -> 1,0,0,0*/
+        /* .text { */
+            /* color: #8800a4 !important; */
+        /* } */
+/*0,1,0,0*/
+#temporibus {
+    color:black;
+}
+
+
+div {
+    background-color: #880000;
+    color: #ffffff;
+    /* margin: 10px; */
+    margin-bottom: 10px;
+    /* margin-right: 5px; */
+    /* margin-left: 5px; */
+    /* margin-top: 25px; */
+
+    /* margin: 10px 5px 10px 5px; */
+    /* margin: 10px 5px; */
+    /* margin: 10px 15px 25px; */
+
+    border: 5px solid black;
+    padding: 100px;
+
+    width:50%;
+
+
+    /* padding-top: 100px; */
+    /* padding-right: 100px; */
+    /* padding-bottom: 100px; */
+    /* padding-left: 100px; */
+
+    /* padding: 10px 5px 10px 5px; */
+    /* padding: 10px 5px; */
+    /* padding: 10px 15px 25px; */
+}
+
+* {
+    margin:0;
+}
+
+.container {
+    background-color: #ffffff;
+    border: none;
+
+    /*bgc enter*/
+    
+    display: flex;
+    justify-content: center; /*space-around располагает блоки на 1 строке, center центрирует блоки*/
+    width: 100%;
+    padding: 0; /*внутренний отступ*/
+}
+
+img {
+    float: left; /*выравнивание по левому краю*/
+    margin-right: 15px; /*внешний отступ справа*/
+    margin-bottom: 15px; /*внешний отступ снизу*/
+}
